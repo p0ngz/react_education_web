@@ -1,7 +1,6 @@
 import { TiArrowSortedDown } from "react-icons/ti";
 import { TiArrowSortedUp } from "react-icons/ti";
 import SidebarMenu from "./SidebarMenu.jsx";
-
 const SidebarComponent = () => {
 
   const sidebarMenuTopic = {

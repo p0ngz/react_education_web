@@ -1,9 +1,7 @@
 import React from "react";
 
 const ChildComponent = ({ value }) => {
-  console.log(
-    "always log when rerender from changing value in parent component"
-  );
+
   return (
     <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 w-full h-full md:w-1/2">
       <h3 className="text-xl font-bold text-white mb-2">Child Component</h3>

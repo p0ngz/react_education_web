@@ -15,9 +15,9 @@ const UseEffectContent = () => {
   const createData = (name, username, email) => {
     return { name, username, email };
   };
-  useEffect(() => {
-    console.log("rows changed: ", rows);
-  }, [rows]);
+  // useEffect(() => {
+  //   console.log("rows changed: ", rows);
+  // }, [rows]);
   useEffect(() => {
     setRows(() => {
       return users.map((user) =>
@@ -28,11 +28,9 @@ const UseEffectContent = () => {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
-        console.log("res: ", res);
         return res.json();
       })
       .then((data) => {
-        console.log("data: ", data);
         setUsers(data);
       });
   }, []);

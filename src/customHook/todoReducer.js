@@ -103,7 +103,6 @@ const todoActionHandler = (state, action) => {
       const afterRemoveTodos = state.todos.filter(
         (todo) => todo.id !== action.payload.id
       );
-      console.log("afterRemoveTodos", afterRemoveTodos);
       return {
         ...state,
         todos: [...afterRemoveTodos],

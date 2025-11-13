@@ -129,7 +129,7 @@ const TodoReducer = () => {
     setTextBtnHandler(mode);
   }, [mode]);
   useEffect(() => {
-    console.log("todoState: ", todoState);
+    // console.log("todoState: ", todoState);
   }, [todoState]);
   return (
     <div id="todo-reducer" className="content-container">
