@@ -1,10 +1,14 @@
-import React from "react";
-import WhatIsReact from "../../components/intro/WhatIsReact.jsx";
+import { Suspense, lazy } from "react";
+import SkeletonIntro from "../../components/intro/SkeletonIntro.jsx";
+
+const WhatIsReactComponent = lazy(() =>
+  import("../../components/intro/WhatIsReact.jsx")
+);
 const WhatIsReactPage = () => {
   return (
-    <>
-      <WhatIsReact />
-    </>
+    <Suspense fallback={<SkeletonIntro />}>
+      <WhatIsReactComponent />
+    </Suspense>
   );
 };
 

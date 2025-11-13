@@ -1,3 +1,4 @@
+
 const WhatIsReact = () => {
   return (
     <div className="content-container">
@@ -30,14 +31,16 @@ const WhatIsReact = () => {
               ทำให้โค้ดเป็นระเบียบและนำกลับมาใช้ใหม่ได้ง่าย
             </li>
             <li>
-              <span className="font-semibold text-subheader-content ">Virtual DOM</span>:
-              เป็นเทคนิคการอัปเดต UI โดยใช้ "Virtual DOM" (DOM เสมือน)
+              <span className="font-semibold text-subheader-content ">
+                Virtual DOM
+              </span>
+              : เป็นเทคนิคการอัปเดต UI โดยใช้ "Virtual DOM" (DOM เสมือน)
               เพื่อเปรียบเทียบการเปลี่ยนแปลงก่อนที่จะนำไปอัปเดตใน DOM จริง
               ซึ่งช่วยให้การอัปเดตทำได้รวดเร็วและมีประสิทธิภาพ
             </li>
             <li>
-              <span className="font-semibold text-subheader-content ">JSX</span>:
-              เป็นส่วนขยายของ JavaScript ที่ช่วยให้สามารถเขียนโค้ดที่ดูคล้าย
+              <span className="font-semibold text-subheader-content ">JSX</span>
+              : เป็นส่วนขยายของ JavaScript ที่ช่วยให้สามารถเขียนโค้ดที่ดูคล้าย
               HTML เพื่อใช้กำหนดโครงสร้างของ Component ได้
               ทำให้การเขียนโค้ดมีความเข้าใจง่ายขึ้น
             </li>
